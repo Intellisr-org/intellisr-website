@@ -73,15 +73,57 @@ function Seo({ description, lang, meta, title }) {
 
 Seo.defaultProps = {
   lang: `en-AU`,
-  meta: [],
-  description: ``,
+  meta: [
+    "Sri Lanka AI",
+    "Artificial Intelligence Sri Lanka",
+    "Innovative AI solutions",
+    "AI company Sri Lanka",
+    "Machine Learning Sri Lanka",
+    "Sri Lankan tech company",
+    "AI innovation",
+    "AI startups Sri Lanka",
+    "Data science Sri Lanka",
+    "AI software solutions",
+    "AI research Sri Lanka",
+    "Sri Lanka technology innovation",
+    "AI-powered solutions",
+    "Sri Lankan AI development",
+    "Deep learning Sri Lanka",
+    "AI-driven technology",
+    "AI consulting Sri Lanka",
+    "Smart solutions Sri Lanka",
+    "AI applications Sri Lanka",
+    "AI automation solutions"
+],
+  description: `Intellisr Pvt. Ltd. empowers businesses with innovative, tailor-made AI solutions to drive efficiency, growth, and long-term success. Our approach combines cutting-edge technology with deep industry insights, ensuring that every tool and concept aligns perfectly with your unique needs.`,
 }
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  meta: [
+    "Sri Lanka AI",
+    "Artificial Intelligence Sri Lanka",
+    "Innovative AI solutions",
+    "AI company Sri Lanka",
+    "Machine Learning Sri Lanka",
+    "Sri Lankan tech company",
+    "AI innovation",
+    "AI startups Sri Lanka",
+    "Data science Sri Lanka",
+    "AI software solutions",
+    "AI research Sri Lanka",
+    "Sri Lanka technology innovation",
+    "AI-powered solutions",
+    "Sri Lankan AI development",
+    "Deep learning Sri Lanka",
+    "AI-driven technology",
+    "AI consulting Sri Lanka",
+    "Smart solutions Sri Lanka",
+    "AI applications Sri Lanka",
+    "AI automation solutions"
+],
+  title: 'Intellisr Pvt. Ltd. empowers businesses with innovative, tailor-made AI solutions to drive efficiency, growth, and long-term success. Our approach combines cutting-edge technology with deep industry insights, ensuring that every tool and concept aligns perfectly with your unique needs.',
 }
 
 export default Seo

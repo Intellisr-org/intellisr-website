@@ -18,11 +18,11 @@ const Header = () => {
             viewport={{ once: false, amount: 0.7 }}
           >
             <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-green-500">
-              Helping businesses grow with<br className="hidden sm:block" />customized AI solutions.
+              Helping Businesses Grow with<br className="hidden sm:block" />Customized AI Solutions.
             </h2>
-            <p className="text-gray-800 text-base drop-shadow-md sm:text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
+            <h4 className="text-gray-700 drop-shadow-md text-lg drop-shaow-md sm:text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
               Intellisr Pvt. Ltd. empowers businesses with innovative, tailor-made AI solutions to drive efficiency, growth, and long-term success. Our approach combines cutting-edge technology with deep industry insights, ensuring that every tool and concept aligns perfectly with your unique needs.
-            </p>
+            </h4>
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
               <a
                 href="/contact"
@@ -46,7 +46,7 @@ const Header = () => {
                 </svg>
               </a>
               <a
-                href="/about"
+                href="https://www.linkedin.com/company/intellisr/"
                 className="inline-flex items-center justify-center px-8 py-3 border border-green-500 text-green-500 rounded-md font-medium transition-all duration-300 ease-in-out hover:bg-green-500 hover:text-white shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Get To Know Us

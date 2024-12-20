@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Helping businesses grow with customised AI`,
-    description: `Intellisr pvt ltd is helping businesses grow with customised AI solutions.`,
+    description: `Intellisr Pvt. Ltd. empowers businesses with innovative, tailor-made AI solutions to drive efficiency, growth, and long-term success. Our approach combines cutting-edge technology with deep industry insights, ensuring that every tool and concept aligns perfectly with your unique needs.`,
     siteUrl: "https://intellisr.com/",
     author: `Sathira Aroshan <sathira@intellisr.com>`,
   },
@@ -85,7 +85,7 @@ module.exports = {
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
         display: `standalone`,
-        icon: `src/images/3D-liquid-abstract-5.webp`, // This path is relative to the root of the site.
+        icon: `src/images/logo-half-c.png`, // This path is relative to the root of the site.
       },
     },
     {

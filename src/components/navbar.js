@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import logo_min from "../images/logo_min.png"
+import logo_min from "../images/logo-min-c.png"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
   const navItems = [
     { name: "Home", to: "/" },
-    { name: "Solutions", to: "/about" },
-    { name: "Company", to: "/gallery" },
+    // { name: "Solutions", to: "/about" },
+    // { name: "Company", to: "/gallery" },
     { name: "Contact", to: "/contact" },
   ]
 
@@ -24,7 +24,8 @@ const Navbar = () => {
               aria-label="Home"
             >
               <img
-                className="max-h-6 max-w-xs"
+                className="max-h-9 max-w-xs"
+                style={{ filter: 'brightness(90%) hue-rotate(20deg) saturate(150%)' }}
                 src={logo_min}
                 alt="Intellisr logo"
               />
@@ -37,7 +38,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.to}
-                    className="relative text-cyan-700 hover:text-green-700 font-montserrat font-medium text-sm transition-colors duration-300 px-3 py-2"
+                    className="relative text-cyan-700 rounded-md border border-white hover:border hover:border-green-700 hover:text-green-700 font-montserrat font-medium text-sm transition-colors duration-300 px-3 py-2"
                   >
                     {item.name}
                     <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-green-500 rounded transition-all duration-300 group-hover:w-full hover:w-full"></span>
@@ -88,7 +89,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.to}
-                className="relative block px-3 py-3 text-base font-medium transition-colors duration-300 hover:text-green-700"
+                className="relative block px-3 py-3 text-base font-medium transition-colors duration-300 hover:border text-cyan-800 hover:border-green-700 hover:text-green-700"
               >
                 <span className="relative z-10">{item.name}</span>
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-green-500 rounded transition-all duration-300 hover:w-full"></span>

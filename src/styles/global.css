@@ -26,6 +26,14 @@ a {
   body {
     background-color: rgb(255, 255, 255);
   }
+
+  @font-face {
+    font-family: 'Mokoto';
+    src: url('../fonts/mokoto-mokoto-regular-400.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 }
 
 @layer utilities {
@@ -34,7 +42,6 @@ a {
     -webkit-text-fill-color: transparent;
   }
 }
-
 
 /* ~~~~ Custom CSS - I know it's bad T_T ~~~~ */
 
