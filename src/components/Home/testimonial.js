@@ -4,14 +4,14 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Intellisr's AI solutions propelled our manufacturing line's efficiency. Their automation minimized downtime and boosted our ROI significantly.",
-    name: "Jane Carter",
-    role: "Operations Manager at FutureWorks"
+    quote: "Intellisr has done an outstanding job developing a high-speed text-to-speech deep learning model for Sinhala-speaking visually impaired individuals. Truly transformative and impactful work!",
+    name: "Ashoka Weerawardhana",
+    role: "Founder at abivruddhi.com"
   },
   {
-    quote: "We partnered with Intellisr for IAAS, and their personalized approach delivered insights we never thought possible.",
-    name: "David Kim",
-    role: "CTO at NextGen Systems"
+    quote: "Exceptional consulting service! Their data-driven approach to digital marketing transformed our strategies, delivering measurable results and insightful analytics.",
+    name: "Hasitha Chamara Dissanayake",
+    role: "CEO at TECHCD STUDIOS"
   },
   {
     quote: "Intellisr guided us with tech consulting and reshaped our data strategy, giving us a competitive edge.",
@@ -62,7 +62,7 @@ const Testimonial = () => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 className="bg-white/80 p-8 rounded-lg shadow-lg"
               >
-                <p className="text-gray-800 text-xl font-medium leading-relaxed italic">
+                <p className="text-black text-xl font-medium leading-relaxed">
                   "{testimonials[currentIndex].quote}"
                 </p>
                 <div className="mt-8">

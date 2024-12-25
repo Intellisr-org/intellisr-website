@@ -17,15 +17,9 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/static/img`,
-        name: "uploads",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
+        // If you need other files from src, keep this; otherwise, remove.
         path: `${__dirname}/src`,
-        name: "_content",
+        name: `_content`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,24 +28,11 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          // Removed "gatsby-remark-relative-images" because it’s typically used in Netlify CMS.
           {
-            resolve: "gatsby-remark-relative-images",
+            resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              name: "uploads",
-            },
-          },
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-            options: {
-              // destinationDir: "public",
-              ignoreFileExtensions: [
-                `png`,
-                `jpg`,
-                `jpeg`,
-                `bmp`,
-                `tiff`,
-                `webp`,
-              ],
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `webp`],
             },
           },
           {
@@ -71,7 +52,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
@@ -88,23 +68,10 @@ module.exports = {
         icon: `src/images/logo-half-c.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        enableIdentityWidget: false,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-decap-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    `gatsby-plugin-netlify`,
+    // Removed "gatsby-plugin-netlify" because it’s specifically for Netlify integration.
+    // Keep "gatsby-plugin-gatsby-cloud" only if you're deploying to Gatsby Cloud.
     `gatsby-plugin-gatsby-cloud`,
     "gatsby-plugin-postcss",
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
   ],

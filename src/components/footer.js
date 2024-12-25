@@ -14,6 +14,7 @@ const Footer = () => {
               <img
                 className="h-20 w-20 fill-white"
                 src={logo}
+                style={{ filter: 'brightness(90%) hue-rotate(-120deg) saturate(150%)' }}
                 alt="Intellisr Logo"
               />
               <div className="flex space-x-3">

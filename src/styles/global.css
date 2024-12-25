@@ -27,13 +27,6 @@ a {
     background-color: rgb(255, 255, 255);
   }
 
-  @font-face {
-    font-family: 'Mokoto';
-    src: url('../fonts/mokoto-mokoto-regular-400.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-
 }
 
 @layer utilities {

@@ -25,7 +25,7 @@ const Navbar = () => {
             >
               <img
                 className="max-h-9 max-w-xs"
-                style={{ filter: 'brightness(90%) hue-rotate(20deg) saturate(150%)' }}
+                style={{ filter: 'brightness(90%) hue-rotate(-20deg) saturate(150%)' }}
                 src={logo_min}
                 alt="Intellisr logo"
               />
